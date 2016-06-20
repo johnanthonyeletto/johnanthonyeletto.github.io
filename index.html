@@ -28,6 +28,12 @@
                 width: 100%;
                 overflow: hidden;
             }
+            #downloadResume{
+                bottom: 0;
+                right: 0;
+                position: fixed;
+                z-index: 100;
+            }
             #home{
                 position: relative;
                 color: white;
@@ -85,6 +91,7 @@
     </head>
     <body onload="experience(); coffee()">
         <div class="container-fluid">
+            <a href="Resume.pdf"><img id="downloadResume" src="images/downloadResume.png" width="200px"/></a>
             <section id="home">
                 <video autoplay muted loop>
                     <source src="images/typing.webm" type="video/webm">
@@ -106,7 +113,6 @@
                         <a href="#home">Home</a></li>
                         <a href="#about">About Me</a>
                         <a href="#resume">Resume</a>
-                        <!--<a href="#contact">Contact Me</a>-->
                     </div>
                 </div>
             </section>
@@ -114,8 +120,8 @@
                 <div class="row">
                     <div class="col-xs-6">
                         <h1>About Me</h1>
-                        <p>Hello, I am John Eletto. A computer science student at Marist College in Poughkeepsie, NY. I love programming and web design. Send me a message in the contact section if you have any question or just want to say hi!</p>
-                        <img src="http://placehold.it/300x300">
+                        <p>Hello, I am John Eletto. A computer science student at Marist College in Poughkeepsie, NY. I love programming and web design. Send me a message if you have any question or just want to say hi!</p>
+                        <img src="images/me.jpg" height="300px" width="auto">
                     </div>
                     <div class="col-xs-6">
                         <h3>Skills</h3>
