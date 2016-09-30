@@ -1,0 +1,64 @@
+body{
+    max-width: 1500px;
+    margin: 0 auto;
+}
+.top{
+    height: 400px;
+    padding-top: 50px;
+}
+.about{
+    text-align: center;
+    padding: 10px;
+}
+.about p{
+    font-size: 25px;
+    padding: 25px;
+}
+.work{
+    background-color: rgba(0,0,0,0.65);
+    color: white;
+    text-align: center;
+    margin: 50px;
+    padding: 40px;
+}
+.work h1{
+    margin-bottom: 0px;
+}
+.work h3{
+    color: rgba(237,110,99,1);
+    margin-top: 0px;
+    padding-bottom: 25px;
+}
+.work ul{
+    list-style-type: square;
+    font-size: 20px;
+    text-align: left;
+}
+.education{
+    padding-top: 40px;
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+    text-align: center;
+    min-height: 400px;
+}
+.education h1{
+    margin-bottom: 0px;
+}
+.education h3{
+    color: rgba(237,110,99,1);
+    margin-top: 0px;
+    padding-bottom: 25px;
+}
+.education b{
+    color: rgba(237,110,99,1);
+}
+.education table{
+    text-align: left;
+    font-size: 25px;
+}
+.skills{
+    background-color: rgba(0,0,0,0.4);
+    text-align: center;
+    color: white;
+    min-height: 300px;
+}

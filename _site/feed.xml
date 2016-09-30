@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>John Eletto</title>
+    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+</description>
+    <link>http://johneletto.com/</link>
+    <atom:link href="http://johneletto.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 30 Sep 2016 00:04:00 +0000</pubDate>
+    <lastBuildDate>Fri, 30 Sep 2016 00:04:00 +0000</lastBuildDate>
+    <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>Welcome to Jekyll!</title>
+        <description>
+</description>
+        <pubDate>Thu, 29 Sep 2016 16:18:45 +0000</pubDate>
+        <link>http://johneletto.com/jekyll/update/2016/09/29/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">http://johneletto.com/jekyll/update/2016/09/29/welcome-to-jekyll.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>Marist</title>
+        <description>
+</description>
+        <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
+        <link>http://johneletto.com/education/2015/09/01/marist.html</link>
+        <guid isPermaLink="true">http://johneletto.com/education/2015/09/01/marist.html</guid>
+        
+        
+        <category>education</category>
+        
+      </item>
+    
+      <item>
+        <title>Tobay</title>
+        <description>&lt;ul&gt;
+    &lt;li&gt;Set up rescue equipment for it to be ready in the event of an emergency.&lt;/li&gt;
+    &lt;li&gt;Maintain continuous surveillance on the ocean.&lt;/li&gt;
+    &lt;li&gt;Spot rip tides and prevent pedestrians from traveling into them.&lt;/li&gt;
+    &lt;li&gt;Perform rescues in the event of drowning or swimming problems.&lt;/li&gt;
+    &lt;li&gt;Perform first aid and CPR according to the demands of a situation.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Mon, 01 Jun 2015 00:00:00 +0000</pubDate>
+        <link>http://johneletto.com/job/2015/06/01/tobay.html</link>
+        <guid isPermaLink="true">http://johneletto.com/job/2015/06/01/tobay.html</guid>
+        
+        
+        <category>job</category>
+        
+      </item>
+    
+      <item>
+        <title>Townofhempstead</title>
+        <description>&lt;ul&gt;
+    &lt;li&gt;Set up rescue equipment for it to be ready in the event of an emergency.&lt;/li&gt;
+    &lt;li&gt;Maintain continuous surveillance on the ocean.&lt;/li&gt;
+    &lt;li&gt;Spot rip tides and prevent pedestrians from traveling into them.&lt;/li&gt;
+    &lt;li&gt;Perform rescues in the event of drowning or swimming problems.&lt;/li&gt;
+    &lt;li&gt;Perform first aid and CPR according to the demands of a situation.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sat, 01 Jun 2013 00:00:00 +0000</pubDate>
+        <link>http://johneletto.com/job/2013/06/01/townOfHempstead.html</link>
+        <guid isPermaLink="true">http://johneletto.com/job/2013/06/01/townOfHempstead.html</guid>
+        
+        
+        <category>job</category>
+        
+      </item>
+    
+  </channel>
+</rss>
