@@ -83,3 +83,13 @@ body{
     text-align: center;
     background-color: rgba(0,0,0,0.5);
 }
+footer{
+    text-align: center;
+}
+footer button{
+    background: rgba(1,1,1,0.7);
+    font-size: 20px;
+    margin-top: 50px;
+    border-color: rgba(237,110,99,1);
+    color: rgba(237,110,99,1);
+}
