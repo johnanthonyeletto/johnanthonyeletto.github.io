@@ -18,8 +18,10 @@ body{
     background-color: rgba(0,0,0,0.65);
     color: white;
     text-align: center;
-    margin: 50px;
+    border: 25px solid white;
     padding: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 .work h1{
     margin-bottom: 0px;
@@ -61,4 +63,23 @@ body{
     text-align: center;
     color: white;
     min-height: 300px;
+    overflow-x: scroll;
+}
+.blog{
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+    color: white;
+    border: 5px solid white;
+    min-height: 200px;
+}
+.blog button{
+    background: transparent;
+    font-size: 20px;
+    margin-top: 10px;
+    border-color: rgba(237,110,99,1);
+    color: rgba(237,110,99,1);;
+}
+.postHeader{
+    text-align: center;
+    background-color: rgba(0,0,0,0.5);
 }

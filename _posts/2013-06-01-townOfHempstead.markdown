@@ -3,7 +3,7 @@ jobTitle: "Ocean Lifeguard"
 employer: "Town of Hempstead"
 dates: "June 2013-September 2014"
 categories: job
-image: resources/bouey2.jpg
+image: /resources/bouey2.jpg
 ---
 <ul>
     <li>Set up rescue equipment for it to be ready in the event of an emergency.</li>

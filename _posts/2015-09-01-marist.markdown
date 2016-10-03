@@ -5,5 +5,5 @@ major: "Computer Science"
 minor: "Information Technology, Cyber Security"
 pathway: "Quantitative Studies"
 categories: education
-image: resources/marist.jpg
+image: /resources/marist.jpg
 ---

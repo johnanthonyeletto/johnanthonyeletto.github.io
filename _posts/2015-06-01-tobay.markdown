@@ -3,7 +3,7 @@ jobTitle: "Ocean Lifeguard"
 employer: "Town of Oyster Bay"
 dates: "June 2015-Present"
 categories: job
-image: resources/bouey.jpg
+image: /resources/bouey.jpg
 ---
 <ul>
     <li>Set up rescue equipment for it to be ready in the event of an emergency.</li>

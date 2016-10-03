@@ -1,0 +1,19 @@
+@media (max-width: 767px) {
+    .education{
+        background-color: white;
+        color: black;
+    }
+    .work{
+        border: none;
+        background-color: white;
+        color: black;
+    }
+    .skills{
+        background-image: url("/resources/writing-notes.jpg");
+        background-size: cover;
+    }
+    .blog{
+        background-color: white;
+        color: black;
+    }
+}

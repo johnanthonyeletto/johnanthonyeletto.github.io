@@ -19,7 +19,8 @@ layout: default
 </div>
 {% for post in site.categories.education %}
     <div class="row parallax-window education">
-        <script>$('.parallax-window').parallax({imageSrc: '{{post.image}}'});</script>
+        <script>if ( $(window).width() >= 768)($('.parallax-window').parallax({imageSrc: '{{post.image}}'}));</script>
+        <img src="{{ post.image }}" width="100%;" class="visible-xs">
         <h1>{{ post.school }}</h1>
         <h3>{{ post.dates }}</h3>
         <table align="center">
@@ -38,7 +39,7 @@ layout: default
 <h1 style="text-align: center;">Work Experience</h1>
 {% for post in site.categories.job %}
     <div class="row parallax-window work">
-        <script>$('.parallax-window').parallax({imageSrc: '{{post.image}}'});</script>
+        <script>if ( $(window).width() >= 768)($('.parallax-window').parallax({imageSrc: '{{post.image}}'}));</script>
         <h1>{{ post.employer }} - {{ post.jobTitle }}</h1>
         <h3>{{ post.dates }}</h3>
         {{ post.content }}
@@ -46,7 +47,7 @@ layout: default
 {% endfor %}
 
 <div class="row parallax-window skills">
-        <script>$('.parallax-window').parallax({imageSrc: 'resources/writing-notes.jpg'});</script>
+        <script>if ( $(window).width() >= 768)($('.parallax-window').parallax({imageSrc: 'resources/writing-notes.jpg'}));</script>
         <h1>My Skills</h1>
         <table align="center">
         <tr>
@@ -87,7 +88,7 @@ layout: default
         </div>
         </td>
         <td>
-        <div class="c100 p80">
+        <div class="c100 p100">
           <span style="color: rgb(0,97,138);">SQL</span>
           <div class="slice">
                 <div class="bar" style="border-color: rgb(0,97,138);"></div>
@@ -106,7 +107,15 @@ layout: default
         </td>
         </tr>
         </table>
-
-
+</div>
+<div class="row">
+    {% for post in site.categories.blog %}
+        <div class="col-sm-4 parallax-window blog">
+            <script>if ( $(window).width() >= 768)($('.parallax-window').parallax({imageSrc: '{{ post.image }}'}));</script>
+            <h2>{{ post.title }}</h2>
+            <p>{{ post.date | date: '%B %d, %Y' }}</p>
+            <a href="{{ post.url }}"><button>Read More</button></a>
+        </div>
+    {% endfor %}
 </div>
 
