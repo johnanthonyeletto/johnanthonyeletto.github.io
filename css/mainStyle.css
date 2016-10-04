@@ -70,7 +70,7 @@ body{
     text-align: center;
     color: white;
     min-height: 300px;
-    overflow-x: scroll;
+    overflow: hidden;
 }
 .blog{
     background-color: rgba(0,0,0,0.5);
@@ -89,6 +89,9 @@ body{
 .postHeader{
     text-align: center;
     background-color: rgba(0,0,0,0.5);
+}
+.postContent{
+    font-size: 15px;
 }
 footer{
     text-align: center;

@@ -7,13 +7,19 @@
         border: none;
         background-color: white;
         color: black;
+        padding: 20px;
     }
     .skills{
         background-image: url("/resources/writing-notes.jpg");
         background-size: cover;
+        text-align: center;
     }
     .blog{
         background-color: white;
         color: black;
+    }
+    .education td{
+        vertical-align: top;
+        padding: 10px;
     }
 }
