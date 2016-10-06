@@ -5,9 +5,71 @@
     <description>View John Eletto's resume and portfolio site. Student - Developer - Designer - Tutor</description>
     <link>http://johneletto.com/</link>
     <atom:link href="http://johneletto.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 04 Oct 2016 22:47:44 +0000</pubDate>
-    <lastBuildDate>Tue, 04 Oct 2016 22:47:44 +0000</lastBuildDate>
+    <pubDate>Thu, 06 Oct 2016 16:56:06 +0000</pubDate>
+    <lastBuildDate>Thu, 06 Oct 2016 16:56:06 +0000</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>How to use Jekyll with Cloud 9</title>
+        <description>&lt;p&gt;If you’re like me, you’re probably having a lot of trouble getting started with using Jekyll on Cloud9. Cloud9 is an
+online development platform that I’ve come to love. It makes it easy for me to edit my site no matter where I am. It
+also has tools that allow me to easily collaborate with other people.&lt;/p&gt;
+
+&lt;p&gt;Cloud9 is a super easy to use platform until you try to set up Jekyll. Cloud9 does not directly support Jekyll so
+this is understandable. While trying to figure out how to make this work, I discovered a workaround to get it going. 
+It’s not flawless, but it certainly does the job.&lt;/p&gt;
+
+&lt;p&gt;My main struggle while trying to get this started was that when I would try to set up Jekyll directly from Cloud9, I 
+would create a new project and not all of the necessary folders would be created in my file explorer. If you’re having
+this same problem, then this post is for you. Keep in mind that I use a MacBook Pro as my main machine. So this 
+tutorial will be geared towards macOS. However, this will also work for Linux and can be easily adjusted to work 
+for Windows.&lt;/p&gt;
+
+&lt;ol&gt;
+    &lt;li&gt;Start a new project on Jekyll using the blank template.&lt;/li&gt;
+    &lt;li&gt;
+        Find the terminal window at the bottom and install Jekyll using the command:
+        
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;            &lt;span class=&quot;n&quot;&gt;gem&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;jekyll&lt;/span&gt;
+        &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+    &lt;/li&gt;
+    &lt;li&gt;Repeat step #2 in the Mac terminal to install Jekyll on your physical machine.&lt;/li&gt;
+    &lt;li&gt;
+        Navigate to the desired directory in the Mac terminal using ls to see which directory you are currently
+        in and cd + directory\ name to change to a new directory.
+    &lt;/li&gt;
+    &lt;li&gt;
+        Once you've navigated to your disired directory, create a new Jekyll project using the command:
+        
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;            &lt;span class=&quot;n&quot;&gt;jekyll&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;yourProjectName&lt;/span&gt;
+        &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+    &lt;/li&gt;
+    &lt;li&gt;Find the folder that you created on your machine and drag it into your Cloud9 file explorer.&lt;/li&gt;
+    &lt;li&gt;Using ls and cd like you did above, navigate to that folder using the Cloud9 terminal.&lt;/li&gt;
+    &lt;li&gt;
+        Get your new project running using the command:
+        
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;            &lt;span class=&quot;n&quot;&gt;jekyll&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;serve&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;host&lt;/span&gt; &lt;span class=&quot;vg&quot;&gt;$IP&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;port&lt;/span&gt; &lt;span class=&quot;vg&quot;&gt;$PORT&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;baseurl&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;''&lt;/span&gt;
+        &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+    &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Congrats! You now have your first Jekyll project running on Cloud9!&lt;/p&gt;
+
+&lt;p&gt;Thanks for reading! Happy Coding.&lt;br /&gt;
+-John&lt;/p&gt;
+</description>
+        <pubDate>Thu, 06 Oct 2016 15:24:45 +0000</pubDate>
+        <link>http://johneletto.com/blog/2016/10/06/c9-jekyll.html</link>
+        <guid isPermaLink="true">http://johneletto.com/blog/2016/10/06/c9-jekyll.html</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
     
       <item>
         <title>My New Website!</title>

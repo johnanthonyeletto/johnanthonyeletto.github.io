@@ -1,0 +1,55 @@
+---
+layout: post
+title:  "How to use Jekyll with Cloud 9"
+date:   2016-10-06 11:24:45 -0400
+categories: blog
+image: /resources/cloud9.jpg
+---
+
+If you're like me, you're probably having a lot of trouble getting started with using Jekyll on Cloud9. Cloud9 is an
+online development platform that I've come to love. It makes it easy for me to edit my site no matter where I am. It
+also has tools that allow me to easily collaborate with other people.
+
+Cloud9 is a super easy to use platform until you try to set up Jekyll. Cloud9 does not directly support Jekyll so
+this is understandable. While trying to figure out how to make this work, I discovered a workaround to get it going. 
+It's not flawless, but it certainly does the job. 
+
+My main struggle while trying to get this started was that when I would try to set up Jekyll directly from Cloud9, I 
+would create a new project and not all of the necessary folders would be created in my file explorer. If you're having
+this same problem, then this post is for you. Keep in mind that I use a MacBook Pro as my main machine. So this 
+tutorial will be geared towards macOS. However, this will also work for Linux and can be easily adjusted to work 
+for Windows. 
+
+<ol>
+    <li>Start a new project on Jekyll using the blank template.</li>
+    <li>
+        Find the terminal window at the bottom and install Jekyll using the command:
+        {% highlight ruby %}
+            gem install jekyll
+        {% endhighlight %}
+    </li>
+    <li>Repeat step #2 in the Mac terminal to install Jekyll on your physical machine.</li>
+    <li>
+        Navigate to the desired directory in the Mac terminal using ls to see which directory you are currently
+        in and cd + directory\ name to change to a new directory.
+    </li>
+    <li>
+        Once you've navigated to your disired directory, create a new Jekyll project using the command:
+        {% highlight ruby %}
+            jekyll new yourProjectName
+        {% endhighlight %}
+    </li>
+    <li>Find the folder that you created on your machine and drag it into your Cloud9 file explorer.</li>
+    <li>Using ls and cd like you did above, navigate to that folder using the Cloud9 terminal.</li>
+    <li>
+        Get your new project running using the command:
+        {% highlight ruby %}
+            jekyll serve --host $IP --port $PORT --baseurl ''
+        {% endhighlight %}
+    </li>
+</ol>
+
+Congrats! You now have your first Jekyll project running on Cloud9!
+
+Thanks for reading! Happy Coding.<br/>
+-John
