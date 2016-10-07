@@ -1,0 +1,83 @@
+---
+layout: post
+title:  "This is Jade"
+date:   2016-10-07 11:24:45 -0400
+categories: blog
+image: /resources/jade.jpg
+---
+
+So... I learned about something really cool. I know it might be old, but I just
+discovered it, so bare with me. - It's called Jade. I don't know exactly how to
+explain it, but basically, you type Jade, run it through a compiler, and the
+compiler spits out HTML.
+
+Why would anyone want this? Well, it basically gets rid of all of the stupid
+"<>"'s and all of the closing tags in HTML. It may not seem like a lot when you're
+just messing around with it, but it can save a significant amount of time when
+you're writing thousands of lines of code for a complex website.
+
+Not only does it save you time, but it's awesome for collaboration since it's so
+pretty and easy to read. Here's an example.
+
+So.. You type Jade which looks like this:
+
+{% highlight ruby %}
+doctype html
+html(lang='en')
+  head
+    title Jade
+    script(type='text/javascript').
+      foo = true;
+      bar = function () {};
+      if (foo) {
+      bar(1 + 5)
+      }
+  body
+    h1 Jade - node template engine
+    #container.col
+      p You are amazing
+      p
+        | Jade is a terse and simple
+        | templating language with a
+        | strong focus on performance
+        | and powerful features.
+{% endhighlight %}
+
+Pretty, right? So that's Jade. Then you run it through a compiler and it spits out
+HTML code like this:
+
+{% highlight ruby %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Jade</title>
+    <script type="text/javascript">
+      foo = true;
+      bar = function () {};
+      if (foo) {
+        bar(1 + 5)
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Jade - node template engine</h1>
+    <div id="container" class="col">
+      <p>You are amazing</p>
+      <p>Jade is a terse and simple
+         templating language with a
+         strong focus on performance
+         and powerful features.</p>
+    </div>
+  </body>
+</html>
+{% endhighlight %}
+
+Ew... Ugly...
+
+So that's jade. I think it's pretty awesome. If you want to get started with Jade,
+you can check out <a href="http://learnjade.com/">http://learnjade.com/</a> which
+is a pretty good site to learn some Jade quickly. YouTube is also always a great
+resource for learning a new language.
+
+Thanks for Reading!
+-John
