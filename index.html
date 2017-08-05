@@ -103,14 +103,3 @@ layout: default
         </table>
     </div>
 </div>
-<div class="row">
-    {% for post in site.categories.blog %}
-        <div class="col-sm-4 parallax-window blog">
-            <script>if ( $(window).width() >= 768)($('.parallax-window').parallax({imageSrc: '{{ post.image }}'}));</script>
-            <h2>{{ post.title }}</h2>
-            <p>{{ post.date | date: '%B %d, %Y' }}</p>
-            <a href="{{ post.url }}"><button>Read More</button></a>
-        </div>
-    {% endfor %}
-</div>
-
