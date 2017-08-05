@@ -1,14 +1,11 @@
 ---
-jobTitle: "Ocean Lifeguard"
-employer: "Town of Oyster Bay"
-dates: "June 2015-Present"
+jobTitle: "Software Intern"
+employer: "Zebra Technologies"
+dates: "Summer 2017"
 categories: job
-image: /resources/bouey.jpg
+image: /resources/zebra.png
 ---
-<ul>
-    <li>Set up rescue equipment for it to be ready in the event of an emergency.</li>
-    <li>Maintain continuous surveillance on the ocean.</li>
-    <li>Spot rip tides and prevent pedestrians from traveling into them.</li>
-    <li>Perform rescues in the event of drowning or swimming problems.</li>
-    <li>Perform first aid and CPR according to the demands of a situation.</li>
-</ul>
+<p>
+Designed and implemented a legacy upgrade of Zebra Retail Solutions’ inventory tracking system from a Visual Basic desktop application to a web based system that utilizes both desktop and Android barcode scanners. Integration of the simple, efficient process increased worker productivity.
+Learned to work with and present to professional teams of developers, including branch executives. Used the Agile Development process to employ user feedback and discover system requirements.
+</p>
