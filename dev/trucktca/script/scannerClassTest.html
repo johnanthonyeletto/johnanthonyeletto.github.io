@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Scanner Class Test</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+  <h1>Hello</h1>
+  <script>
+
+  (function( $ ){
+    $.fn.Scanner = function(userSettings = {}){
+      let defaultSettings = {
+        actionKey: 13,
+        enabled: true
+      };
+      var settings = Object.assign({}, defaultSettings, userSettings);
+
+      let onScan = (callback) => {
+        var input = "";
+        this.keypress((e)=>{
+          var key = e.which;
+          if(key == settings.actionKey && settings.enabled){
+            callback({input});
+            input = "";
+          }else if(settings.enabled){
+            input += String.fromCharCode(key);
+          }
+        });
+      };
+
+      return {
+        settings,
+        onScan
+      }
+    }
+  })( jQuery );
+
+  var myScanner = $("body").Scanner();
+
+  myScanner.onScan(function(e){
+    console.log(e.input);
+  });
+  </script>
+</body>
+</html>
