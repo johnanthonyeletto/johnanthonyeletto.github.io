@@ -1,0 +1,206 @@
+/*BEGIN GLOBAL VARIABLES*/
+
+:root {
+  --navy: rgba(9, 42, 68, 1);
+  --navy-light: rgba(22, 53, 90, 1);
+  --red: rgba(223, 43, 67, 1);
+  /*  --red: rgba(119,176,41,1);*/
+}
+
+/*END GLOBAL VARIABLES*/
+
+/*BEGIN BOOTSTRAP MODS*/
+
+.btn.btn-primary{
+  background-color: var(--navy);
+  border-color: var(--navy);
+}
+
+/*END BOOTSTRAP MODS*/
+
+
+/*BEGIN CONTACT BAR*/
+
+#contact-bar {
+  background-color: var(--navy);
+  width: 100%;
+  height: 50px;
+  color: white;
+}
+
+#contact-bar p {
+  display: inline-block;
+  line-height: 50px;
+  margin: 0 10px;
+}
+
+#contact-bar p:first-of-type {
+  background-color: var(--red);
+  height: 100%;
+  padding: 0 5px;
+  position: relative;
+  box-shadow: 0 4px 2px -2px gray;
+  z-index: 5000;
+  font-weight: bolder;
+}
+
+/*END CONTACT BAR*/
+
+/*BEGIN NAVBAR*/
+
+nav.navbar{
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+/*END NAVBAR*/
+
+/*BEGIN HERO SECTION*/
+
+.parallax-window {
+    min-height: 200px;
+    background: transparent;
+}
+
+#hero {
+  height: 80vh;
+  overflow: hidden;
+  position: relative;
+  padding: 100px;
+/*  background-image: url(../img/club-2492011_1920.jpg);*/
+  background-position: center;
+  background-size: cover;
+}
+
+#hero-small {
+  height: 30vh;
+  overflow: hidden;
+  position: relative;
+/*  padding: 100px;*/
+/*  background-image: url(../img/club-2492011_1920.jpg);*/
+  background-position: center;
+  background-size: cover;
+}
+
+#hero video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-height: 100%;
+  min-width: 100%;
+  z-index: 1;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+#hero #video-overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(9, 42, 68, 0.25);
+  z-index: 2;
+}
+
+#hero-small #video-overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(9, 42, 68, 0.25);
+  z-index: 2;
+}
+
+#hero #video-overlay h1, #hero-small #video-overlay h1 {
+  margin-top: 10vh;
+  color: white;
+  font-size: 3em;
+  text-transform: uppercase;
+}
+
+#hero #video-overlay h2 {
+  color: white;
+  font-style: italic;
+}
+
+#hero #video-overlay h1 span {
+  color: var(--red);
+  background-color: white;
+}
+
+/*END HERO SECTION*/
+
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+
+/*BEGIN SERVICES SECTION*/
+
+#services-section .card{
+  box-shadow:  0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+}
+
+/*END SERVICES SECTION*/
+
+
+/*BEGIN CONSULTATION SECTION*/
+
+#consultation-section{  
+  background: 
+    /* top, transparent red, faked with gradient */ 
+    linear-gradient(
+      rgba(22, 53, 90, 0.5), 
+      rgba(22, 53, 90, 0.5)
+    ),
+    /* bottom, image */
+    url('../img/paper-3139127_1920.jpg');
+}
+
+#consultation-section p {
+    font-size: 3em;
+    font-style: italic;
+    color: var(--white);
+}
+
+/*END CONSULTATION SECTION*/
+
+
+
+
+
+
+
+
+
+
+/*BEGIN FOOTER*/
+
+footer {
+  background-color: var(--navy-light);
+  color: white;
+  padding: 25px;
+}
+
+/*END FOOTER*/
+
+/*BEGIN COPYRIGHT*/
+
+#footer-bottom {
+  background-color: var(--navy);
+  color: white;
+}
+
+#footer-bottom p {
+  line-height: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+/*END COPYRIGHT*/
