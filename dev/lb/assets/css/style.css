@@ -9,6 +9,10 @@
 
 /*END GLOBAL VARIABLES*/
 
+html, body{
+  max-width: 100vw;
+  overflow-x: hidden;
+}
 
 body *{
   max-width: 100vw !important;
