@@ -183,7 +183,9 @@ nav.navbar{
 
 
 
-
+#downloads-table tbody tr{
+  cursor: pointer;
+}
 
 
 
