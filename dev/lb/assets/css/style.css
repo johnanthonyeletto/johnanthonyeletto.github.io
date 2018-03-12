@@ -76,7 +76,7 @@ nav.navbar{
 }
 
 #hero-small {
-  height: 30vh;
+  min-height: 30vh;
   overflow: hidden;
   position: relative;
 /*  padding: 100px;*/
