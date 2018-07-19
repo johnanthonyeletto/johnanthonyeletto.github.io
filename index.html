@@ -1,50 +1,26 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <title>John Eletto</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/css/mdb.min.css" rel="stylesheet">
+</head>
 
-<div class="row parallax-window top">
-    <script>$('.parallax-window').parallax({imageSrc: 'resources/headerBG.jpg'});</script>
-    <div class="col-sm-6"></div>
-    <div class="col-sm-6">
-        <h1>Hello, I am</h1>
-        <h2><span class="typing"></span></h2>
-    </div>
-</div>
+<body>
 
-<div class="row about">
-    <h1>About Me</h1>
-    <div class="col-sm-6"><img src="resources/family.jpg" width="100%"/></div>
-    <div class="col-sm-6">
-        <p>Hello, I'm JohnAnthony Eletto, lifeguard, drummer, and computer science student at Marist College in Poughkeepsie, NY. Here you can see a picture of my awesome family! I'm in the middle in the suit. Don't forget to download my resume and send me an email.</p>
-        <a href="/resources/JohnEletto_Resume.pdf" target="_blank"><button>Download My Resume</button></a>
-    </div>
-</div>
-{% for post in site.categories.education %}
-    <div class="row parallax-window education">
-        <script>if ( $(window).width() >= 768)($('.parallax-window').parallax({imageSrc: '{{post.image}}'}));</script>
-        <img src="{{ post.image }}" width="100%;" class="visible-xs">
-        <h1>{{ post.school }}</h1>
-        <h3>{{ post.dates }}</h3>
-        <table align="center">
-        <tr>
-        <td><b>Major:</b></td><td>{{ post.major }}</td>
-        </tr>
-        <tr>
-        <td><b>Minor:</b></td><td>{{ post.minor }}</td>
-        </tr>
-        <tr>
-        <td><b>Pathway:</b></td><td>{{ post.pathway }}</td>
-        </tr>
-        </table>
-    </div>
-{% endfor %}
-<h1 style="text-align: center;">Work Experience</h1>
-{% for post in site.categories.job %}
-    <div class="row parallax-window work">
-        <script>if ( $(window).width() >= 768)($('.parallax-window').parallax({imageSrc: '{{post.image}}'}));</script>
-        <h1>{{ post.employer }} - {{ post.jobTitle }}</h1>
-        <h3>{{ post.dates }}</h3>
-        {{ post.content }}
-    </div>
-{% endfor %}
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/js/mdb.min.js"></script>
+</body>
+
+</html>
