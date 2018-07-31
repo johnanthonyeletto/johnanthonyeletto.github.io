@@ -1,9 +1,0 @@
----
-school: "Marist College"
-dates: "August 2015-Present"
-major: "Computer Science"
-minor: "CyberSecurity, Information Technology"
-pathway: "Quantitative Studies"
-categories: education
-image: /resources/marist.jpg
----
