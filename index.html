@@ -3,15 +3,274 @@
 
 <head>
     <title>John Eletto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap core CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/css/mdb.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+    <style>
+        body {
+
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+
+        .timeline {
+            border-left: 8px solid #42A5F5;
+            border-bottom-right-radius: 2px;
+            border-top-right-radius: 2px;
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+            color: #333;
+            margin: 50px auto;
+            letter-spacing: 0.5px;
+            position: relative;
+            line-height: 1.4em;
+            padding: 20px;
+            list-style: none;
+            text-align: left;
+        }
+
+        .timeline h1,
+        .timeline h2,
+        .timeline h3 {
+            font-size: 1.4em;
+        }
+
+        .timeline .event {
+            border-bottom: 1px solid rgba(160, 160, 160, 0.2);
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .timeline .event:last-of-type {
+            padding-bottom: 0;
+            margin-bottom: 0;
+            border: none;
+        }
+
+        .timeline .event:before,
+        .timeline .event:after {
+            position: absolute;
+            display: block;
+            top: 0;
+        }
+
+        .timeline .event:before {
+            left: -200px;
+            color: #212121;
+            content: attr(data-date);
+            text-align: right;
+            /*  font-weight: 100;*/
+            font-size: 16px;
+            min-width: 120px;
+        }
+
+        .timeline .event:after {
+            box-shadow: 0 0 0 8px #42A5F5;
+            left: -30px;
+            background: #212121;
+            border-radius: 50%;
+            height: 11px;
+            width: 11px;
+            content: "";
+            top: 5px;
+        }
+
+        /**/
+
+        /*——————————————
+Responsive Stuff
+———————————————*/
+
+        @media (max-width: 945px) {
+            .timeline .event::before {
+                left: 0.5px;
+                top: 20px;
+                min-width: 0;
+                font-size: 13px;
+            }
+            .timeline h3 {
+                font-size: 16px;
+            }
+            .timeline p {
+                padding-top: 20px;
+            }
+            section.lab h3.card-title {
+                padding: 5px;
+                font-size: 16px
+            }
+        }
+
+        @media (max-width: 768px) {
+            .timeline .event::before {
+                left: 0.5px;
+                top: 20px;
+                min-width: 0;
+                font-size: 13px;
+            }
+            .timeline .event:nth-child(1)::before,
+            .timeline .event:nth-child(3)::before,
+            .timeline .event:nth-child(5)::before {
+                top: 38px;
+            }
+            .timeline h3 {
+                font-size: 16px;
+            }
+            .timeline p {
+                padding-top: 20px;
+            }
+        }
+
+        /*——————————————
+others
+———————————————*/
+
+        a.portfolio-link {
+            margin: 0 auto;
+            display: block;
+            text-align: center;
+        }
+
+        video::-webkit-media-controls {
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
+    <header class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card card-image" style="background-image: url(https://mdbootstrap.com/img/Photos/Others/gradient1.jpg);">
+                    <div class="text-white text-center py-5 px-4 my-5">
+                        <div>
+                            <h1 class="card-title pt-3 mb-5 font-bold">
+                                <strong>Hello.</strong>
+                            </h1>
+                            <h2>
+                                I am
+                                <br>
+                                <span class="typing">&nbsp;</span>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="container pt-5">
+        <div class="row">
+            <div class="col-sm-6" style="position:relative;">
+                <video width="100%" autoplay muted loop controls="false">
+                    <source src="./ms-9ebaTI.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="col-sm-6">
+                <p>
+                    <strong>Hi There,</strong>
+                    <br/>
+                    <br/> Thanks for visiting my site! My name is John Eletto. I'm a developer and student at Marist College with
+                    a major in Computer Science. I love to build things. Make sure you check out some of my projects below.
+                    <br/>
+                    <br/> While you're here, don't forget to
+                    <a href="#">Download My Resume</a> or
+                    <a href="#">Check Me Out On LinkedIn</a>. Also, feel free to get in touch with me via LinkedIn or e-mail.
+                </p>
+                <p style="font-family: 'Satisfy', cursive; font-size: 2em;">John Eletto</p>
+                <button class="btn btn-primary btn-rounded">
+                    <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                    Resume
+                </button>
+                <button class="btn btn-primary btn-rounded">
+                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                    Linked-In
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="container pt-5">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2>My Experience</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <ul class="timeline w-75">
+                    <li class="event" data-date="">
+                        <h3>Zebra Technologies</h3>
+                        <h6 class="text-muted">Software Intern - Summer 2018</h6>
+                        <p>
+                            This September 2015 I will begin an MSc in Management and Entrepreneurship at University of Sussex, to broaden my knowledge
+                            and gain skills necessary for my future in business and management.
+                        </p>
+                    </li>
+                    <li class="event" data-date="">
+                        <h3>Bambö</h3>
+                        <h6 class="text-muted">Co-Founder - Jan 2018 - Present</h6>
+                        <p>
+                            Claromentis is an intranet software provider company. I started working at the Brighton office as a Marketing Designer while
+                            I was still attending my final year at the University of Sussex. My primary responsibilities
+                            included creating corporate identity for the company; I re-designed their website, and have created
+                            marketing materials such as brochures.
+                        </p>
+                        <p>Since graduating from university, I have also undertaken responsibilities for designing a product
+                            for the company. The roles I have been given have provided the perfect opportunity to implement
+                            the skills I have gained throughout my higher education, as well as experiencing the running
+                            of a successful business.
+                        </p>
+                    </li>
+                    <li class="event" data-date="">
+                        <h3>Zebra Technologies</h3>
+                        <h6 class="text-muted">Software Intern - Summer 2017</h6>
+                        <p>Throughout my degree I have gained expansive knowledge of informatics areas including Human Computer
+                            Interaction, Multimedia Design and Development, Program Analysis and Design For my final year
+                            project, I created a 2D Puzzler Game for iOS called 'Flat Ball' and received a first. I therefore
+                            hope to release this game and further develop it to add new levels and improve the features.
+                        </p>
+                    </li>
+                    <li class="event" data-date="">
+                        <h3>Marist College SGA</h3>
+                        <h6 class="text-muted">Developer - Jan 2017 - Present</h6>
+                        <p>This is a small startup that a friend and I created to gain more skills and apply those I had learned
+                            while completing my diploma. Since its inception, as a front - end web developer I have advised,
+                            designed and built web solutions for numerous clients.
+                        </p>
+                    </li>
+                    <li class="event" data-date="">
+                        <h3>Chegg Inc.</h3>
+                        <h6 class="text-muted">Tutor - Dec 2016 - Present</h6>
+                        <p>This is where my interest in building things for interactive media began. During my first computing
+                            course I studied a range of core topics including multimedia design, database design, computer
+                            games development, computer networks and object oriented programming.</p>
+                    </li>
+                    <li class="event" data-date="">
+                        <h3>Rerack Apparel</h3>
+                        <h6 class="text-muted">Co-Founder - Mar 2017 - Feb 2018</h6>
+                        <p>This is where my interest in building things for interactive media began. During my first computing
+                            course I studied a range of core topics including multimedia design, database design, computer
+                            games development, computer networks and object oriented programming.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="container pt-5">
+        <div class="row">
+            <div class="col">
+                <h2>My Portfolio</h2>
+            </div>
+        </div>
+
+    </section>
 
     <!-- JQuery -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -21,6 +280,38 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/js/mdb.min.js"></script>
+    <script type="text/javascript" src="./scripts/typed.min.js"></script>
+    <script>
+        $(function () { $(".typing").typed({ strings: ["John Eletto", "Developer", "Styde", "Student", "Programmer", "Tutor", "Web Designer"], typeSpeed: 200, loop: !0 }) });
+
+        function isInView(el) {
+            var vidTop = $(el).offset().top - $(window).scrollTop();
+            var vidBottom = vidTop + $(el).height();
+
+            return (vidTop >= -100 && vidBottom < window.innerHeight);
+        }
+        function checkVid() {
+
+            $("video").each(function () {
+                if (isInView($(this))) {                    // visible?
+                    $(this)[0].play();    // play if not playing
+                }
+                else {
+                    $(this)[0].pause();  // pause if not paused
+                }
+            });
+        }
+        $(document).on("scroll", function () {
+            checkVid();
+        });
+
+        $(document).ready(function () {
+            checkVid();
+
+        });
+
+    </script>
+
 </body>
 
 </html>
