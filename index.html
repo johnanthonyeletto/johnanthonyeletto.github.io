@@ -140,6 +140,10 @@ others
 
         /* But it does not work with newer browsers, the below doesn't hide the play button parent div */
 
+        *::-webkit-media-controls {
+            display: none !important;
+        }
+
         *::-webkit-media-controls-panel {
             display: none !important;
             -webkit-appearance: none;
