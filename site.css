@@ -56,7 +56,7 @@ body {
 }
 
 .timeline .event:after {
-    box-shadow: 0 0 0 8px #42A5F5;
+    box-shadow: 0 0 0 8px #4285f4;
     left: -30px;
     background: #212121;
     border-radius: 50%;
