@@ -1,4 +1,13 @@
-$(function () { $(".typing").typed({ strings: ["John Eletto", "Developer", "Styde", "Student", "Programmer", "Tutor", "Web Designer"], typeSpeed: 200, loop: !0 }) });
+$(function () {
+
+    var options = {
+        strings: ["", "John Eletto<span class='text-primary'>.</span>", "a developer<span class='text-primary'>.</span>", "a programmer<span class='text-primary'>.</span>", "a tutor<span class='text-primary'>.</span>", "a web designer<span class='text-primary'>.</span>"],
+        typeSpeed: 150,
+        loop: !0
+    };
+
+    var typed = new Typed(".typing", options);
+});
 
 function isInView(el) {
     var vidTop = $(el).offset().top - $(window).scrollTop();
