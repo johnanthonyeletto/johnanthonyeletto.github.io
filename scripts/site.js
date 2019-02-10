@@ -1,7 +1,7 @@
 $(function () {
 
     var options = {
-        strings: ["", "John Eletto<span class='text-primary'>.</span>", "a developer<span class='text-primary'>.</span>", "a programmer<span class='text-primary'>.</span>", "a tutor<span class='text-primary'>.</span>", "a web designer<span class='text-primary'>.</span>"],
+        strings: ["", "John Eletto<span class='text-primary'>.</span>", "a full stack software engineer<span class='text-primary'>.</span>",  "a tutor<span class='text-primary'>.</span>", "a drummer<span class='text-primary'>.</span>"],
         typeSpeed: 150,
         loop: !0
     };
