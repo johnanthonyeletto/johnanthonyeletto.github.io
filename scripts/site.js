@@ -7,6 +7,16 @@ $(function () {
     };
 
     var typed = new Typed(".typing", options);
+
+    options = {
+        "cursorOuter": "circle-basic",
+        "hoverEffect": "circle-move",
+        "hoverItemMove": false,
+        "defaultCursor": true,
+        "outerWidth": 30,
+        "outerHeight": 30
+      }
+      magicMouse(options);
 });
 
 function isInView(el) {
